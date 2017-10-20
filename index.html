@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Puppy Collector | Game</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+<body>
+	<div class="header">
+		<h1>Puppy Collector</h1>
+	</div>
+	<div class="instructions">
+		<h3>Game Rules:</h3>
+		</br>
+			<p>At the start of the game, a random number will be chosen for you. This is your <span> "Number To Get"</span> in order to win the game and collect ALL THE PUPPIES!</p>
+			<br>
+			<ul>There are four puppies below:</ul>
+			<ul>
+				<li>Pitty</li>
+				<li>Rotty</li>
+				<li>Husky</li>
+				<li>Pug</li>
+			</ul>
+			<br>
+			<p>Each time you click on a puppy, you will add a specific amount of points to your score. Each puppy will be randomly assigned a value, only being revealed to you once clicked. In order to win the game, your total score must match the "Number to Get" score. Get it right, and you get to go home with all the puppies! Go over the score, and the puppies go back to the pound...</p>
+	</div>
+	<div class="numberToMatch">
+		<h2>Number To Get:
+			<span id= "randomNumber"></span>
+		</h2>
+	</div>
+	<div class="winsAndLosses">
+		<h2>Wins:
+			<span id= "numberWins"></span>
+			</br>
+			Losses: 
+			<span id= "numberLosses"></span>
+		</h2>
+	</div>
+	<div class="puppies">
+		<img src="assets/images/pitty.jpg" class=puppyImage id="one" alt="Pitty">
+		<img src="assets/images/rotty.jpg" class=puppyImage id="two" alt="Rotty">
+		<img src="assets/images/husky.jpg" class=puppyImage id= "three" alt="Husky">
+		<img src="assets/images/pug.jpg" class=puppyImage id= "four" alt="Pug">
+	</div>
+	<div class="userTotal">
+		<h2>Your total score is:
+			<span id="finalTotal"></span>
+		</h2>
+	</div>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.js"></script>
+	<script type="text/javascript" src="assets/javascript/game.js"></script>
+</body>
+</html>
